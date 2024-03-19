@@ -1,0 +1,63 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<br />
+        <br />
+        <asp:Panel ID="Panel1" runat="server" BackColor="#FFFFFF" Height="70px" Style="z-index: 102;
+            left: -1px; position: absolute; top: -2px" Width="972px">
+            <span style="font-size: 32pt; background-color: #ffffff">&nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;&nbsp; <span style="font-size: 0.8em; font-family: Verdana"><span style="color: #a3ccf1">
+                    Factory Statistics Information System</span> </span>&nbsp; &nbsp;&nbsp; </span>
+        </asp:Panel>
+        &nbsp;<br />
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:contentplaceholder>
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Style="z-index: 101;
+            left: 7px; position: absolute; top: 69px" Width="965px" BackColor="#FFFFC0">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Registeration.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Factories List.aspx" Text="Factories List" Value="Accident"></asp:MenuItem>
+                <asp:MenuItem Text="Details" Value="Inspection Details">
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Inspection details.aspx"
+                        Text="Inspection Details" Value="Inspection Details"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Accident details.aspx"
+                        Text="Accident Details" Value="Accident Details"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Conviction details.aspx"
+                        Text="Conviction Details" Value="Conviction Details"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Financial Details.aspx"
+                        Text="Financial Details" Value="Financial Details"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Returns Details"
+                    Value="Annul Returns Details">
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Annul Return Details.aspx"
+                        Text="Annual" Value="Annual"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Half-Yearly Returns.aspx"
+                        Text="Half-Yearly" Value="Half-Yearly"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Personal Details" Value="Personal Details">
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Commitee Details.aspx"
+                        Text="Commitee" Value="Commitee"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Partner Details.aspx"
+                        Text="Partners" Value="Partners"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Employee Details.aspx"
+                        Text="Employee" Value="Employee"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Orders Details.aspx" Text="Orders" Value="Sign Out"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Default.aspx" Text="Signout"
+                    Value="Signout"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </div>
+    </form>
+</body>
+</html>

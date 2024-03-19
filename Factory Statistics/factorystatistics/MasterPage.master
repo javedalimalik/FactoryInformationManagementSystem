@@ -1,0 +1,67 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<br />
+        <asp:Panel ID="Panel1" runat="server" BackColor="#FFFFFF" Height="70px" Style="z-index: 102;
+            left: -1px; position: absolute; top: -2px" Width="972px">
+            <span style="font-size: 32pt; background-color: #ffffff">&nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;&nbsp; <span style="font-size: 0.8em; font-family: Verdana"><span style="color: #a3ccf1">
+                    Factory Statistics Information System</span> </span>&nbsp; &nbsp;&nbsp; </span>
+        </asp:Panel>
+        <br />
+        <br />
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            
+            
+            
+        </asp:contentplaceholder>
+        <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal"
+            Style="z-index: 101; left: 6px; position: absolute; top: 72px" Width="964px" BackColor="#FFE0C0" ForeColor="#0000C0">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Registeration.aspx" Text="Factory Registeration" Value="Factory Registeration">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Factories List.aspx" Text="Factories" Value="List of Factories">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Add Details" Value="Add Accident Details">
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Accident And Inspection .aspx"
+                        Text="Accident &amp; Inspection" Value="Accident &amp; Inspection"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Add Convictions.aspx"
+                        Text="Conviction" Value="Conviction"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Add Financial.aspx"
+                        Text="Financial" Value="Financial"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Closed and Removed Factories.aspx" Text="Closed &amp; Removed Factories" Value="Add Inspection Details">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Add  Returns" Value="Add Annul Returns">
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Annul Returns.aspx"
+                        Text="Annual Returns" Value="Annual Returns"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Half-yearly.aspx"
+                        Text="Half-Yearly Returns" Value="Half-Yearly Returns"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Personal Details" Value="Personal Details">
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Add Commitee.aspx"
+                        Text="Commitee" Value="Commitee"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Add Partner.aspx"
+                        Text="Partners" Value="Partners"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Add Emp.aspx" Text="Employees"
+                        Value="Employees"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Add Orders.aspx" Text="Orders" Value="Login"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Factory Statistics/factorystatistics/Default.aspx" Text="Signout"
+                    Value="Signout"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <br />
+    </div>
+    </form>
+</body>
+</html>
